@@ -10,3 +10,22 @@ nav {
 nav li{
     padding: 2rem;
 }
+
+main{
+    flex: 1;
+}
+
+/* footer */
+
+footer{
+    background-color: aquamarine;
+    padding: 3rem;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 120rem;
+    margin: auto;
+}
