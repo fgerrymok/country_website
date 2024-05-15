@@ -1,0 +1,12 @@
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: aquamarine;
+}
+
+nav li{
+    padding: 2rem;
+}
