@@ -6,29 +6,20 @@ body {
     font-family: "figtree", 'Courier New', Courier, monospace;
 }
 
-/* Navigation */
-
-nav {
+header{
+    background-color: aquamarine;
+    padding: 2rem 0rem;
     display: flex;
     justify-content: flex-end;
-    list-style-type: none;
-    background-color: aquamarine;
-    padding: 3rem 0rem;
 }
 
-nav li a, nav li a:visited{
-    text-decoration: none;
-    color: green;
-    padding: 1rem 2rem;
+/* Navigation */
+
+#menu-btn{
+    width: 3rem;
+    height: 3rem;
 }
 
-nav li a:focus, nav li a:hover{
-    background-color: white;
-}
-
-nav li a:active{
-    background-color: white;
-}
 
 /* Header */
 
