@@ -1,21 +1,44 @@
-/* Header */
+/* General */
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: "figtree", 'Courier New', Courier, monospace;
+}
+
+/* Navigation */
 
 nav {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     background-color: aquamarine;
+    padding: 3rem 0rem;
 }
 
-nav li{
-    padding: 2rem;
+nav li a, nav li a:visited{
+    text-decoration: none;
+    color: green;
+    padding: 1rem 2rem;
 }
+
+nav li a:focus, nav li a:hover{
+    background-color: white;
+}
+
+nav li a:active{
+    background-color: white;
+}
+
+/* Header */
+
+/* Main body */
 
 main{
     flex: 1;
 }
 
-/* footer */
+/* Footer */
 
 footer{
     background-color: aquamarine;
