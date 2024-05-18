@@ -8,7 +8,11 @@ body {
 
 header{
     background-color: grey;
-    padding: 2rem 0 10rem 0;
+    padding: 2rem 0;
+}
+
+main{
+    flex: 1;
 }
 
 /* Navigation */
@@ -20,6 +24,7 @@ header{
     border: none;
     position: fixed;
     right: 0;
+    top: 1.5rem;
 }
 
 .main-navigation ul{
@@ -29,6 +34,7 @@ header{
     width: 100%;
     position: fixed;
     top: 4rem;
+    z-index: 100;
 }
 
 .main-navigation.toggled ul{
@@ -57,11 +63,30 @@ header{
 
 /* Header */
 
+.favicon-placeholder{
+    font-size: 3rem;
+    display: inline;
+}
+
+/* Hero Section */
+
+.hero-section{
+    height: 20rem;
+    background-position: center;
+    background-image: url("../images/hong_kong_placeholder.jpeg");
+    position: relative;
+}
+
+.hero-section h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Main body */
 
-main{
-    flex: 1;
-}
 
 /* Footer */
 
