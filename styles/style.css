@@ -8,24 +8,51 @@ body {
 
 header{
     background-color: grey;
-    padding: 2rem 0rem;
-    display: flex;
-    justify-content: flex-end;
+    padding: 2rem 0 10rem 0;
 }
 
 /* Navigation */
 
 #menu-btn{
     width: 3rem;
-    height: 3rem;
+    height: 2rem;
+    background-color: gray;
+    border: none;
+    position: fixed;
+    right: 0;
 }
 
 .main-navigation ul{
     display: none;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 4rem;
 }
 
 .main-navigation.toggled ul{
     display: block;
+}
+
+/* Navigation Psuedo States */
+
+.main-navigation ul li a, .main-navigation ul li a:visited{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid lightgray;
+}
+
+.main-navigation ul li a:hover, .main-navigation ul li a:focus{
+    border: 1px solid yellow;
+}
+
+.main-navigation ul li a:active{
+    color: white;
+    background-color: darkcyan;
 }
 
 /* Header */
