@@ -1,0 +1,104 @@
+/* General */
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-family: "figtree", 'Courier New', Courier, monospace;
+}
+
+header{
+    background-color: grey;
+    padding: 2rem 0;
+}
+
+main{
+    flex: 1;
+}
+
+/* Navigation */
+
+#menu-btn{
+    width: 3rem;
+    height: 2rem;
+    background-color: gray;
+    border: none;
+    position: fixed;
+    right: 0;
+    top: 1.5rem;
+}
+
+.main-navigation ul{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    top: 4rem;
+    z-index: 100;
+}
+
+.main-navigation.toggled ul{
+    display: block;
+}
+
+/* Navigation Psuedo States */
+
+.main-navigation ul li a, .main-navigation ul li a:visited{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid lightgray;
+}
+
+.main-navigation ul li a:hover, .main-navigation ul li a:focus{
+    border: 1px solid yellow;
+}
+
+.main-navigation ul li a:active{
+    color: white;
+    background-color: darkcyan;
+}
+
+/* Header */
+
+.favicon-placeholder{
+    font-size: 3rem;
+    display: inline;
+}
+
+/* Hero Section */
+
+.hero-section{
+    height: 20rem;
+    background-position: center;
+    background-image: url("../images/hong_kong_placeholder.jpeg");
+    position: relative;
+}
+
+.hero-section h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main body */
+
+
+/* Footer */
+
+footer{
+    background-color: grey;
+    padding: 3rem;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 120rem;
+    margin: auto;
+}
