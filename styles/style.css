@@ -9,6 +9,7 @@ body {
 header{
     background-color: grey;
     padding: 2rem 0;
+    position: relative;
 }
 
 main{
@@ -22,7 +23,7 @@ main{
     height: 2rem;
     background-color: gray;
     border: none;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 1.5rem;
 }
