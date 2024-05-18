@@ -7,7 +7,7 @@ body {
 }
 
 header{
-    background-color: aquamarine;
+    background-color: grey;
     padding: 2rem 0rem;
     display: flex;
     justify-content: flex-end;
@@ -20,6 +20,13 @@ header{
     height: 3rem;
 }
 
+.main-navigation ul{
+    display: none;
+}
+
+.main-navigation.toggled ul{
+    display: block;
+}
 
 /* Header */
 
@@ -32,7 +39,7 @@ main{
 /* Footer */
 
 footer{
-    background-color: aquamarine;
+    background-color: grey;
     padding: 3rem;
 }
 
