@@ -83,10 +83,18 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 3rem;
+    font-size: 4rem;
+    text-align: center;
 }
 
 /* Main body */
 
+.image-div, .text-div{
+    margin: 1rem;
+    border: 1px dotted black;
+    height:10rem;
+}
 
 /* Footer */
 
