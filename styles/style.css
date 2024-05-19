@@ -63,6 +63,22 @@ main{
     background-color: #9597A7;
 }
 
+/* Links Pseudo Classes */
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:focus{
+    text-decoration: underline;
+    text-decoration-color: #827E7B;
+}
+
+a:active{
+    color:#827E7B;
+}
+
 /* Header */
 
 .favicon-placeholder{
@@ -122,13 +138,28 @@ main{
         width: 50%;
     }
 
+    .main-content-text{
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .main-content-article img{
         object-fit: contain;
     }
+}
 
-    .main-content-text{
-        padding: 0 2rem;
+@media(min-width: 75rem){
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+
+    .main-content article:last-child{
+        grid-area: 2 / 1 / auto / span 2;
+    }
+
 }
 
 /* Footer */
