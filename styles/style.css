@@ -7,7 +7,7 @@ body {
 }
 
 header{
-    background-color: #FAFAF7;
+    background-color: #827E7B;
     padding: 2rem 0;
     position: relative;
 }
@@ -22,7 +22,7 @@ main{
 #menu-btn{
     width: 3rem;
     height: 2rem;
-    background-color: #FAFAF7;
+    background-color: #827E7B;
     border: none;
     position: absolute;
     right: 0;
@@ -49,18 +49,18 @@ main{
     display: block;
     text-decoration: none;
     color: black;
-    background-color: #9597A7;
+    background-color: #827E7B;
     padding: 0.3rem 0.6rem;
-    border: 1px solid #9597A7;
+    border: 1px solid #827E7B;
 }
 
 .main-navigation ul li a:hover, .main-navigation ul li a:focus{
-    border: 1px solid yellow;
+    border: 1px solid #FAFAF7;
 }
 
 .main-navigation ul li a:active{
     color: white;
-    background-color: darkcyan;
+    background-color: #9597A7;
 }
 
 /* Header */
@@ -75,7 +75,7 @@ main{
 .hero-section{
     height: 25rem;
     position: relative;
-    background-color: #FAFAF7;
+    background-image: linear-gradient(to bottom, #827E7B 50%, #FAFAF7 50%);
 }
 
 .hero-section video{
@@ -94,6 +94,8 @@ main{
     line-height: 3rem;
     font-size: 4rem;
     text-align: center;
+    backdrop-filter: blur(7px) saturate(70%);
+    padding: 0.9rem;
 }
 
 /* Main body */
@@ -132,7 +134,7 @@ main{
 /* Footer */
 
 footer{
-    background-color: #FAFAF7;
+    background-color: #827E7B;
     padding: 3rem;
     border-top: 2px solid black;
 }
