@@ -34,7 +34,7 @@ main{
     list-style-type: none;
     padding: 0;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 4rem;
     z-index: 100;
 }
@@ -104,6 +104,29 @@ main{
 
 .main-content-text{
     padding: 2rem;
+}
+
+@media(min-width: 40rem){
+    .main-content-article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-content-article:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    
+    .main-content-article > *{
+        width: 50%;
+    }
+
+    .main-content-article img{
+        object-fit: contain;
+    }
+
+    .main-content-text{
+        padding: 0 2rem;
+    }
 }
 
 /* Footer */
