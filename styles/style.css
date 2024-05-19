@@ -72,10 +72,16 @@ main{
 /* Hero Section */
 
 .hero-section{
-    height: 20rem;
-    background-position: center;
-    background-image: url("../images/hong_kong_placeholder.jpeg");
+    height: 25rem;
     position: relative;
+    background-color: gray;
+}
+
+.hero-section video{
+    object-fit: cover;
+    height: 25rem;
+    min-width: 100%;
+    clip-path: polygon(0 7%, 100% 15%, 100% 85%, 0 93%);
 }
 
 .hero-section h1{
