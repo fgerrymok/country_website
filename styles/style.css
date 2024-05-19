@@ -7,12 +7,14 @@ body {
 }
 
 header{
-    background-color: grey;
+    background-color: #FAFAF7;
     padding: 2rem 0;
+    position: relative;
 }
 
 main{
     flex: 1;
+    background-color: #FAFAF7;
 }
 
 /* Navigation */
@@ -20,9 +22,9 @@ main{
 #menu-btn{
     width: 3rem;
     height: 2rem;
-    background-color: gray;
+    background-color: #FAFAF7;
     border: none;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 1.5rem;
 }
@@ -47,9 +49,9 @@ main{
     display: block;
     text-decoration: none;
     color: black;
-    background-color: lightgray;
+    background-color: #9597A7;
     padding: 0.3rem 0.6rem;
-    border: 1px solid lightgray;
+    border: 1px solid #9597A7;
 }
 
 .main-navigation ul li a:hover, .main-navigation ul li a:focus{
@@ -71,10 +73,16 @@ main{
 /* Hero Section */
 
 .hero-section{
-    height: 20rem;
-    background-position: center;
-    background-image: url("../images/hong_kong_placeholder.jpeg");
+    height: 25rem;
     position: relative;
+    background-color: #FAFAF7;
+}
+
+.hero-section video{
+    object-fit: cover;
+    height: 25rem;
+    min-width: 100%;
+    clip-path: polygon(0 7%, 100% 15%, 100% 85%, 0 93%);
 }
 
 .hero-section h1{
@@ -83,16 +91,27 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 3rem;
+    font-size: 4rem;
+    text-align: center;
 }
 
 /* Main body */
+.main-content-article{
+    border: 2px solid black;
+    margin: 1rem;
+}
 
+.main-content-text{
+    padding: 2rem;
+}
 
 /* Footer */
 
 footer{
-    background-color: grey;
+    background-color: #FAFAF7;
     padding: 3rem;
+    border-top: 2px solid black;
 }
 
 #wrapper{
