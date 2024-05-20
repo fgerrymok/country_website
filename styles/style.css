@@ -74,6 +74,28 @@ main{
     background-color: #9597A7;
 }
 
+@media(min-width: 50rem){
+    #menu-btn{
+        display: none;
+    }
+
+    .main-navigation ul, .main-navigation.toggled ul{
+        display: flex;
+        margin: 0;
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+    }
+
+    .main-navigation ul li a, .main-navigation ul li a:visited{
+        border: none;
+        padding: 0.6rem 2rem;
+        background-color: none;
+    }
+}
+
 /* Links Pseudo Classes */
 
 a, a:visited{
@@ -102,6 +124,7 @@ a:active{
     min-width: 100%;
     position: absolute;
     top: 0;
+    filter: drop-shadow(0.2rem 0.2rem 1.5rem black);
 }
 
 .hero-section h1{
@@ -112,6 +135,7 @@ a:active{
     font-size: 4rem;
     padding: 0.9rem;
     color: #FAFAF7;
+    text-shadow: 0.4rem 0.4rem 0.4rem black;
 }
 
 /* Main body */
