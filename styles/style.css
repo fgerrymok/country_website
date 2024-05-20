@@ -54,24 +54,25 @@ main{
 
 /* Navigation Psuedo States */
 
-.main-navigation ul li a, .main-navigation ul li a:visited{
+.main-navigation a, .main-navigation a:visited{
     display: block;
     text-decoration: none;
     color: #FAFAF7;
-    background-color: rgb(0 0 0 / 70%);
+    background-color: rgb(0 0 0 / 60%);
     padding: 0.3rem 0.6rem;
     border: 1px solid #827E7B;
     border-left: none;
     border-right: none;
+    border: 1px solid rgb(0 0 0 / 0%);
+    padding: 0.6rem 2rem;
 }
 
-.main-navigation ul li a:hover, .main-navigation ul li a:focus{
-    border: 1px solid #FAFAF7;
+.main-navigation a:hover, .main-navigation a:focus{
+    border: 1px solid rgba(255, 255, 255, 50%);
 }
 
-.main-navigation ul li a:active{
-    color: white;
-    background-color: #9597A7;
+.main-navigation a:active{
+    background-color: rgba(31, 38, 54, 60%);
 }
 
 @media(min-width: 50rem){
@@ -87,12 +88,6 @@ main{
         top: 50%;
         right: 0;
         transform: translate(0%, -50%);
-    }
-
-    .main-navigation ul li a, .main-navigation ul li a:visited{
-        border: none;
-        padding: 0.6rem 2rem;
-        background-color: none;
     }
 }
 
