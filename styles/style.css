@@ -90,25 +90,16 @@ a:active{
     color:#827E7B;
 }
 
-/* Header */
-
-.favicon-placeholder{
-    font-size: 3rem;
-    display: inline;
-}
-
 /* Hero Section */
 
 .hero-section{
     height: 20rem;
-    background-image: linear-gradient(to bottom, #827E7B 50%, #FAFAF7 50%);
 }
 
 .hero-section video{
     object-fit: cover;
     height: 25rem;
     min-width: 100%;
-    clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
     position: absolute;
     top: 0;
 }
@@ -116,7 +107,7 @@ a:active{
 .hero-section h1{
     margin: 0;
     position: absolute;
-    top: 17rem;
+    top: 16rem;
     line-height: 3rem;
     font-size: 4rem;
     padding: 0.9rem;
@@ -125,12 +116,20 @@ a:active{
 
 /* Main body */
 .main-content-article{
-    border: 2px solid black;
-    margin: 1rem;
+    margin: 2rem 1rem;
 }
 
 .main-content-text{
-    padding: 2rem;
+    padding: 2rem 1rem;
+}
+
+.main-content-article img{
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    transition: transform .2s;
+}
+
+.main-content-article img:hover{
+    transform: scale(1.1);
 }
 
 @media(min-width: 40rem){
@@ -142,13 +141,17 @@ a:active{
     .main-content-article:nth-child(2){
         flex-direction: row-reverse;
     }
+
+    .main-content-article:nth-child(2) .main-content-text{
+        text-align: right;
+    }
     
     .main-content-article > *{
         width: 50%;
     }
 
     .main-content-text{
-        padding: 0 2rem;
+        padding: 0 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
