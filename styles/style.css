@@ -24,13 +24,18 @@ main{
 /* Navigation */
 
 #menu-btn{
-    width: 3rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     background-color: transparent;
     border: none;
     position: absolute;
+    top: 50%;
     right: 1rem;
-    top: 1.7rem;
+    transform: translate(-0%, -50%);
+}
+
+#menu-btn svg path{
+    fill: #FAFAF7;
 }
 
 .main-navigation ul{
