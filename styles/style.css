@@ -7,9 +7,13 @@ body {
 }
 
 header{
-    background-color: #827E7B;
-    padding: 2rem 0;
+    background-color: rgb(0 0 0 / 60%);
     position: relative;
+    z-index: 9999;
+}
+
+header img{
+    padding: 1rem 2rem;
 }
 
 main{
@@ -22,11 +26,11 @@ main{
 #menu-btn{
     width: 3rem;
     height: 2rem;
-    background-color: #827E7B;
+    background-color: transparent;
     border: none;
     position: absolute;
-    right: 0;
-    top: 1.5rem;
+    right: 1rem;
+    top: 1.7rem;
 }
 
 .main-navigation ul{
@@ -35,7 +39,7 @@ main{
     padding: 0;
     width: 100%;
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     z-index: 100;
 }
 
@@ -48,10 +52,12 @@ main{
 .main-navigation ul li a, .main-navigation ul li a:visited{
     display: block;
     text-decoration: none;
-    color: black;
-    background-color: #827E7B;
+    color: #FAFAF7;
+    background-color: rgb(0 0 0 / 70%);
     padding: 0.3rem 0.6rem;
     border: 1px solid #827E7B;
+    border-left: none;
+    border-right: none;
 }
 
 .main-navigation ul li a:hover, .main-navigation ul li a:focus{
@@ -89,8 +95,7 @@ a:active{
 /* Hero Section */
 
 .hero-section{
-    height: 25rem;
-    position: relative;
+    height: 20rem;
     background-image: linear-gradient(to bottom, #827E7B 50%, #FAFAF7 50%);
 }
 
@@ -98,20 +103,19 @@ a:active{
     object-fit: cover;
     height: 25rem;
     min-width: 100%;
-    clip-path: polygon(0 7%, 100% 15%, 100% 85%, 0 93%);
+    clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0 100%);
+    position: absolute;
+    top: 0;
 }
 
 .hero-section h1{
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 17rem;
     line-height: 3rem;
     font-size: 4rem;
-    text-align: center;
-    backdrop-filter: blur(7px) saturate(70%);
     padding: 0.9rem;
+    color: #FAFAF7;
 }
 
 /* Main body */
