@@ -13,7 +13,7 @@ header{
 }
 
 header img{
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 main{
@@ -115,7 +115,7 @@ a:active{
 
 .hero-section video{
     object-fit: cover;
-    height: 25rem;
+    height: 26rem;
     min-width: 100%;
     position: absolute;
     top: 0;
@@ -125,7 +125,7 @@ a:active{
 .hero-section h1{
     margin: 0;
     position: absolute;
-    top: 18rem;
+    top: 17.4rem;
     line-height: 3rem;
     font-size: 4rem;
     padding: 0.9rem;
