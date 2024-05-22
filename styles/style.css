@@ -6,19 +6,21 @@ body {
     font-family: "figtree", 'Courier New', Courier, monospace;
 }
 
+main{
+    flex: 1;
+    background-color: #FAFAF7;
+}
+
+/* Header */
+
 header{
     background-color: rgb(0 0 0 / 60%);
     position: relative;
     z-index: 9999;
 }
 
-header img{
+#site-logo{
     padding: 1rem;
-}
-
-main{
-    flex: 1;
-    background-color: #FAFAF7;
 }
 
 /* Navigation */
