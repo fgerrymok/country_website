@@ -13,8 +13,14 @@ main{
 
 /* Header */
 
-header{
+.logo-container-home{
     background-color: rgb(0 0 0 / 60%);
+    position: relative;
+    z-index: 9999;
+}
+
+.logo-container-general{
+    background-color: #1f2636;
     position: relative;
     z-index: 9999;
 }
