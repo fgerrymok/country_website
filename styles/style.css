@@ -115,6 +115,8 @@ a:active{
     color:#827E7B;
 }
 
+/* Home Page */
+
 /* Hero Section */
 
 .hero-section{
@@ -199,6 +201,46 @@ a:active{
         grid-area: 2 / 1 / auto / span 2;
     }
 
+}
+
+/* Attractions */
+
+.interactive-map{
+    background-color: pink;
+    height: 25rem;
+    position: relative;
+}
+
+.interactive-map-img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.pin-one{
+    position: absolute;
+    z-index: 2;
+    bottom: 8rem;
+    right: 4rem;
+    left: 14rem;
+    background: transparent;
+    border: none;
+}
+
+.pin-one svg path{
+    fill: rgb(88, 0, 0);
+}
+
+@media(min-width:46.87rem){
+    .interactive-map{
+        background-color: pink;
+        height: 50rem;
+    }
+}
+
+@media(min-width: 96.87rem){
+    .interactive-map{
+        height: 65rem;
+    }
 }
 
 /* Footer */
