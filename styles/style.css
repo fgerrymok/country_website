@@ -221,13 +221,33 @@ a:active{
     z-index: 2;
     bottom: 8rem;
     right: 4rem;
-    left: 14rem;
+    left: 13.3rem;
     background: transparent;
     border: none;
+    padding: 0;
+    transform: scale(1.2);
+}
+
+.pin-one svg:hover, .pin-one svg:focus{
+    transform: scale(1.5);
 }
 
 .pin-one svg path{
     fill: rgb(88, 0, 0);
+}
+
+.monster-tower{
+    display: none;
+    background-color: blue;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.show-popup{
+    display: block;
 }
 
 @media(min-width:46.87rem){
@@ -242,6 +262,7 @@ a:active{
         height: 65rem;
     }
 }
+
 
 /* Footer */
 
