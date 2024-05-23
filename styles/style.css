@@ -253,24 +253,26 @@ a:active{
 }
 
 .pin-two{
-    bottom: 9.3rem;
+    bottom: 10.2rem;
     right: 11rem;
     left: 8.3rem;
 }
 
-/* Attraction Popup */
-
-.monster-tower-article{
-    display: none;
-    background-color: #798ab2;
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    right: 0;
+.pin-three{
+    bottom: 18rem;
+    right: 4rem;
+    left: 9rem;
 }
 
-.avenue-of-stars-article{
+.pin-four{
+    bottom: 5.8rem;
+    right: 10rem;
+    left: 2rem;
+}
+
+/* Attraction Popup */
+
+.monster-tower-article, .avenue-of-stars-article, .temple-article, .prison-article{
     display: none;
     background-color: #798ab2;
     position: absolute;
@@ -308,6 +310,18 @@ a:active{
         right: 13rem;
         left: 8rem;
     }
+
+    .pin-three{
+        bottom: 36.5rem;
+        right: 4rem;
+        left: 13rem;
+    }
+
+    .pin-four{
+        bottom: 14.5rem;
+        right: 18rem;
+        left: 1rem;
+    }
 }
 
 @media(min-width: 96.87rem){
@@ -322,9 +336,21 @@ a:active{
     }
 
     .pin-two{
-        bottom: 25rem;
+        bottom: 27rem;
         right: 13rem;
         left: 7rem;
+    }
+
+    .pin-three{
+        bottom: 47.5rem;
+        right: 4rem;
+        left: 17rem;
+    }
+
+    .pin-four{
+        bottom: 19rem;
+        right: 24rem;
+        left: 1rem;
     }
 }
 
