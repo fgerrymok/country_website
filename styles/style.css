@@ -255,7 +255,7 @@ a:active{
 }
 
 .pin-one svg path, .pin-two svg path, .pin-three svg path, .pin-four svg path{
-    fill: rgb(88, 0, 0);
+    fill: rgb(189, 10, 10);
 }
 
 .pin-one svg:hover, .pin-one svg:focus, .pin-two svg:hover, .pin-two svg:focus, .pin-three svg:hover, .pin-three svg:focus, .pin-four svg:hover, .pin-four svg:focus{
