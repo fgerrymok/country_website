@@ -378,25 +378,108 @@ a:active{
     color: white;
     padding: 2rem 0.5rem;
     margin: 0;
-    grid-area: 1 / 1 / span 1 / span 2;
+    grid-area: 1 / 1 / span 1 / span 4;
 }
 
 .food-container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.street-food, .dimsum, .other{
+.street-food, .dimsum, .other, .final-food-class{
     margin: 0;
     background-color: #5c71a0;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 0 1rem;
 }
 
 .street-food{
     grid-area: 2 / 1 / span 2 / span 1;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
 }
 
 .dimsum{
-    grid-area: 
+    grid-area: 4 / 4 / span 2 / span 1;
+    writing-mode: vertical-lr;
+}
+
+.other{
+    grid-area: 6 / 1 / span 2 / span 1;
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+}
+
+.final-food-class{
+    grid-area: 8 / 4 / span 2 / span 1;
+    writing-mode: vertical-lr;
+}
+
+.food-grouping{
+    grid-column: span 3;
+}
+
+@media(min-width: 53rem){
+    .food-heading{
+        grid-area: 1 / 1 / span 1 / span 7;
+    }
+
+    .food-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .street-food{
+        grid-area: 2 / 1 / span 1 / span 1;
+        writing-mode: initial;
+        transform: none;
+    }
+    
+    .dimsum{
+        grid-area: 3 / 7 / span 1 / span 1;
+        writing-mode: initial;
+    }
+    
+    .other{
+        grid-area: 4 / 1 / span 1 / span 1;
+        writing-mode: initial;
+        transform: none;
+    }
+    
+    .final-food-class{
+        grid-area: 5 / 7 / span 1 / span 1;
+        writing-mode: initial;
+    }
+}
+
+@media(min-width: 75rem){
+    .food-heading{
+        grid-area: 1 / 1 / span 1 / span 12;
+    }
+
+    .food-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .street-food{
+        grid-area: 2 / 1 / span 2 / span 1;
+    }
+    
+    .dimsum{
+        grid-area: 2 / 4 / span 2 / span 1;
+    }
+    
+    .other{
+        grid-area: 2 / 7 / span 2 / span 1;
+    }
+    
+    .final-food-class{
+        grid-area: 2 / 10 / span 2 / span 1;
+    }
+
+    .food-grouping{
+        grid-column: span 2;
+    }
 }
 
 /* Footer */
