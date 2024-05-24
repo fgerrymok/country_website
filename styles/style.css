@@ -482,6 +482,86 @@ a:active{
     }
 }
 
+/* Credits */
+
+.credits-heading{
+    font-size: 2rem;
+    background-color: #394664;
+    color: white;
+    padding: 2rem 0.5rem;
+    margin: 0;
+}
+
+table{
+    margin: 2rem auto;
+    border: 2px solid black;
+}
+
+table caption{
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+}
+
+@media(min-width: 45rem){
+    .credits-section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .credits-section h2{
+        width: 100%;
+    }
+
+    table{
+        margin: 2rem;
+    }
+}
+
+/* Contact */
+
+.credits-section{
+    padding: 2rem;
+}
+
+form{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label{
+    display: block;
+}
+
+input{
+    width: 90%;
+}
+
+textarea{
+    width: 90%;
+}
+
+@media(min-width: 43rem){
+    form{
+        width: 36.75rem;
+    }
+}
+
+/* Table */
+
 /* Footer */
 
 footer{

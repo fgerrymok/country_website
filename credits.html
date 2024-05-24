@@ -18,6 +18,7 @@
     <script defer src="scripts/scripts.js"></script>
   </head>
   <body>
+    <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div id="wrapper">
       <header>
         <div class="logo-container-general">
@@ -28,7 +29,7 @@
               id="site-logo"
           /></a>
 
-          <nav id="main-navigation" class="main-navigation">
+          <nav id="main-navigation" class="main-navigation others-navigation">
             <button id="menu-btn">
               <svg
                 clip-rule="evenodd"
@@ -53,7 +54,90 @@
           </nav>
         </div>
       </header>
-      <main></main>
+      <main id="site-main">
+        <h1 class="credits-heading">Credits</h1>
+        <section class="credits-section">
+          <h2>Credits</h2>
+          <table>
+            <thead>
+              <caption>
+                Attractions
+              </caption>
+              <tr>
+                <th>Content</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monster Tower</td>
+                <td>Source</td>
+              </tr>
+              <tr>
+                <td>Avenue of Stars</td>
+                <td>Source</td>
+              </tr>
+              <tr>
+                <td>Wong Tai Sin Temple</td>
+                <td>Source</td>
+              </tr>
+              <tr>
+                <td>Former Victoria Prison</td>
+                <td>Source</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <caption>
+                Food
+              </caption>
+              <tr>
+                <th>Content</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monster Tower</td>
+                <td>Source</td>
+              </tr>
+              <tr>
+                <td>Avenue of Stars</td>
+                <td>Source</td>
+              </tr>
+              <tr>
+                <td>Wong Tai Sin Temple</td>
+                <td>Source</td>
+              </tr>
+              <tr>
+                <td>Former Victoria Prison</td>
+                <td>Source</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="credits-section">
+          <h2>Feel free to reach out!</h2>
+          <p>
+            For any further inquiries, please contact us using the form below.
+          </p>
+        </section>
+        <form action="#" method="post" name="contact-form">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="fn" />
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" />
+          <label for="comments">Comments:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" />
+        </form>
+      </main>
       <footer>
         <div class="footer-text">
           <p><a href="#site-logo">Back to Top</a></p>

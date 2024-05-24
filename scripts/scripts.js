@@ -20,23 +20,33 @@ menuBtn.addEventListener("click", function () {
   navigationElem.classList.toggle("toggled");
 });
 
-pinOne.addEventListener("click", function () {
-  attractionOne.classList.toggle("show-popup");
-});
+if (attractionOne) {
+  pinOne.addEventListener("click", function () {
+    attractionOne.classList.toggle("show-popup");
+  });
+}
 
-pinTwo.addEventListener("click", function () {
-  attractionTwo.classList.toggle("show-popup");
-});
+if (attractionTwo) {
+  pinTwo.addEventListener("click", function () {
+    attractionTwo.classList.toggle("show-popup");
+  });
+}
 
-pinThree.addEventListener("click", function () {
-  attractionThree.classList.toggle("show-popup");
-});
+if (attractionThree) {
+  pinThree.addEventListener("click", function () {
+    attractionThree.classList.toggle("show-popup");
+  });
+}
 
-pinFour.addEventListener("click", function () {
-  attractionFour.classList.toggle("show-popup");
-});
+if (attractionFour) {
+  pinFour.addEventListener("click", function () {
+    attractionFour.classList.toggle("show-popup");
+  });
+}
 
-closeBtns.forEach(closePopup);
+if (closePopup) {
+  closeBtns.forEach(closePopup);
+}
 
 function closePopup(closeBtn) {
   closeBtn.addEventListener("click", function () {
