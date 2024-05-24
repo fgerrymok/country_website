@@ -386,7 +386,7 @@ a:active{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.street-food, .dimsum, .other, .final-food-class{
+.street-food, .dimsum, .hk-cafe, .snacks{
     margin: 0;
     background-color: #5c71a0;
     text-align: center;
@@ -405,13 +405,13 @@ a:active{
     writing-mode: vertical-lr;
 }
 
-.other{
+.hk-cafe{
     grid-area: 6 / 1 / span 2 / span 1;
     writing-mode: vertical-lr;
     transform: scale(-1, -1);
 }
 
-.final-food-class{
+.snacks{
     grid-area: 8 / 4 / span 2 / span 1;
     writing-mode: vertical-lr;
 }
@@ -440,13 +440,13 @@ a:active{
         writing-mode: initial;
     }
     
-    .other{
+    .hk-cafe{
         grid-area: 4 / 1 / span 1 / span 1;
         writing-mode: initial;
         transform: none;
     }
     
-    .final-food-class{
+    .snacks{
         grid-area: 5 / 7 / span 1 / span 1;
         writing-mode: initial;
     }
@@ -469,11 +469,11 @@ a:active{
         grid-area: 2 / 4 / span 2 / span 1;
     }
     
-    .other{
+    .hk-cafe{
         grid-area: 2 / 7 / span 2 / span 1;
     }
     
-    .final-food-class{
+    .snacks{
         grid-area: 2 / 10 / span 2 / span 1;
     }
 
