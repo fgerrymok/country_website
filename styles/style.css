@@ -310,6 +310,24 @@ a:active{
     border: none;
 }
 
+@media(min-width: 37rem){
+    .monster-tower-article, .avenue-of-stars-article, .temple-article, .prison-article{
+        width: 35rem;
+        margin: auto;
+        top: 3rem;
+    }
+
+    .article-image-and-description img, .article-image-and-description p{
+        width: 50%;
+        margin: 0;
+        border: none;
+    }
+
+    .article-image-and-description{
+        display: flex;
+    }
+}
+
 @media(min-width:46.87rem){
     .interactive-map{
         height: 50rem;
@@ -337,6 +355,13 @@ a:active{
         bottom: 14.5rem;
         right: 18rem;
         left: 1rem;
+    }
+
+    .monster-tower-article, .avenue-of-stars-article, .temple-article, .prison-article{
+        top: 3rem;
+        left: 3rem;
+        right: 3rem;
+        bottom: 3rem;
     }
 }
 
