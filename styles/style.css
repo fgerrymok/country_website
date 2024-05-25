@@ -243,7 +243,6 @@ a:active{
 
 .interactive-map article img{
     padding: 1rem;
-    border-bottom: 2px dashed #1f2636;
 }
 
 .interactive-map p{
@@ -325,16 +324,16 @@ a:active{
         width: 35rem;
         margin: auto;
         top: 3rem;
+        border: 3px solid black;
     }
 
-    .article-image-and-description img, .article-image-and-description p{
-        width: 50%;
+    .article-image-and-description p{
         margin: 0;
-        border: none;
     }
 
     .article-image-and-description{
         display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -368,10 +367,10 @@ a:active{
     }
 
     .monster-tower-article, .avenue-of-stars-article, .temple-article, .prison-article{
-        top: 3rem;
+        top: 5rem;
         left: 3rem;
         right: 3rem;
-        bottom: 3rem;
+        bottom: 5rem;
     }
 }
 
