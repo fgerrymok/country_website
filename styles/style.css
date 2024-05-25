@@ -234,6 +234,7 @@ a:active{
 .interactive-map{
     height: 25rem;
     position: relative;
+    overflow: hidden;
 }
 
 .interactive-map h2{
