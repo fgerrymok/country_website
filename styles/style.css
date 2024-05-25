@@ -492,6 +492,11 @@ a:active{
     margin: 0;
 }
 
+.credits-and-form{
+    max-width: 56.25rem;
+    margin: auto;
+}
+
 table{
     margin: 2rem auto;
     border: 2px solid black;
