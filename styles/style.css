@@ -427,6 +427,19 @@ a:active{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.food-container h2{
+    font-size: 1.9rem;
+}
+
+.food-container h3, .food-container p{
+    margin: 0;
+    padding: 0.5rem;    
+}
+
+.food-description{
+    margin: 1rem 0;
+}
+
 .street-food, .dimsum, .hk-cafe, .snacks{
     margin: 0;
     background-color: #5c71a0;
@@ -468,6 +481,14 @@ a:active{
 
     .food-container{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .food-container h2{
+        padding: 2rem 1rem;
+    }
+
+    .food-description{
+        padding: 2rem;
     }
 
     .street-food{
