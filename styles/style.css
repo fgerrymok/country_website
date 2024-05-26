@@ -514,36 +514,6 @@ a:active{
     }
 }
 
-@media(min-width: 75rem){
-    .food-heading{
-        grid-area: 1 / 1 / span 1 / span 12;
-    }
-
-    .food-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .street-food{
-        grid-area: 2 / 1 / span 2 / span 1;
-    }
-    
-    .dimsum{
-        grid-area: 2 / 4 / span 2 / span 1;
-    }
-    
-    .hk-cafe{
-        grid-area: 2 / 7 / span 2 / span 1;
-    }
-    
-    .snacks{
-        grid-area: 2 / 10 / span 2 / span 1;
-    }
-
-    .food-grouping{
-        grid-column: span 2;
-    }
-}
-
 /* Credits */
 
 .credits-heading{
