@@ -228,7 +228,6 @@ a:active{
 .interactive-map{
     height: 25rem;
     position: relative;
-    overflow: hidden;
 }
 
 .interactive-map h2{
@@ -300,7 +299,6 @@ a:active{
     top: 0;
     left: 0;
     right: 0;
-    height: 40rem;
 }
 
 .show-popup{
@@ -342,6 +340,7 @@ a:active{
 @media(min-width:46.87rem){
     .interactive-map{
         height: 50rem;
+        overflow: hidden;
     }
 
     .pin-one{
