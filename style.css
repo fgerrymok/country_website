@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6{
     line-height: 2rem;
 }
 
+blockquote{
+    font-size: 1.5rem;
+}
+
 cite{
     font-size: 1.5rem;
 }
@@ -233,7 +237,6 @@ a:active{
 
 .interactive-map h2{
     padding: 0rem 1rem;
-    margin-right: 2rem;
 }
 
 .interactive-map article img{
@@ -525,9 +528,8 @@ a:active{
 }
 
 .travelling-quote{
-    margin: 5rem 1rem 2rem 1rem;
-    font-size: 1.5rem;
     width: fit-content;
+    margin: 5rem auto 2rem auto;
     padding: 2rem;
     border: 2px solid black;
     border-radius: 1rem;
@@ -566,10 +568,6 @@ th, td{
 
     table{
         margin: 2rem;
-    }
-
-    .travelling-quote{
-        margin: 5rem auto 2rem auto;
     }
 }
 
