@@ -3,51 +3,166 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Country Website | Food</title>
+    <title>Food | Hong Kong</title>
+    <meta
+      name="description"
+      content="A non-extensive list of all the must-try delicacies that Hong Kong has to offer."
+    />
     <link rel="stylesheet" href="styles/normalize-fwd.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="media/favicons/country_website_favicon.svg"
-    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <script defer src="scripts/scripts.js"></script>
   </head>
   <body>
+    <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div id="wrapper">
       <header>
-        <a href="index.html"
-          ><img
-            src="media/images/country_website_favicon.png"
-            alt="Webpage Logo for Hong Kong"
-            id="site-logo"
-        /></a>
+        <div class="logo-container-general">
+          <a href="index.html"
+            ><img
+              src="media/images/country_website_favicon.png"
+              alt="Webpage Logo for Hong Kong"
+              id="site-logo"
+          /></a>
 
-        <nav id="main-navigation" class="main-navigation">
-          <button id="menu-btn">
-            <svg
-              clip-rule="evenodd"
-              fill-rule="evenodd"
-              stroke-linejoin="round"
-              stroke-miterlimit="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
-                fill-rule="nonzero"
-              />
-            </svg>
-          </button>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </nav>
+          <nav id="main-navigation" class="main-navigation others-navigation">
+            <button id="menu-btn">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </button>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="attractions.html">Attractions</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="credits.html">Credits</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <main></main>
+      <main id="site-main" class="food-container">
+        <h1 class="food-heading">Food</h1>
+        <h2 class="street-food">Street Food</h2>
+        <article class="food-grouping">
+          <img
+            src="media/images/curry_fish_balls.jpeg"
+            alt="Curry Fish Balls, Hong Kong Street Food"
+          />
+          <div class="food-description">
+            <h3>Curry Fish Balls</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusamus, soluta!
+            </p>
+          </div>
+        </article>
+        <article class="food-grouping">
+          <img
+            src="media/images/bubble_waffle.png"
+            alt="Bubble Egg Waffle, Hong Kong Street Food"
+          />
+          <div class="food-description">
+            <h3>Bubble Egg Waffle</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam, quia.
+            </p>
+          </div>
+        </article>
+        <h2 class="dimsum">Dimsum</h2>
+        <article class="food-grouping">
+          <img
+            src="media/images/shrimp_dumpling.jpeg"
+            alt="Shrimp Dumplings, Hong Kong Dimsum"
+          />
+          <div class="food-description">
+            <h3>Shrimp Dumplings (Har Gow)</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+              libero?
+            </p>
+          </div>
+        </article>
+        <article class="food-grouping">
+          <img
+            src="media/images/siu_mai.jpeg"
+            alt="Siu Mai, Hong Kong Dimsum"
+          />
+          <div class="food-description">
+            <h3>Siu Mai</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+              laborum.
+            </p>
+          </div>
+        </article>
+        <h2 class="hk-cafe">Hong Kong Cafe</h2>
+        <article class="food-grouping">
+          <img
+            src="media/images/baked_porkchop_rice.jpeg"
+            alt="Baked Porkchop with Rice, Hong Kong Cafe"
+          />
+          <div class="food-description">
+            <h3>Baked Porkchop with Rice</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+              odio.
+            </p>
+          </div>
+        </article>
+        <article class="food-grouping">
+          <img
+            src="media/images/fried_rice.jpeg"
+            alt="Fried Rice, Hong Kong Cafe"
+          />
+          <div class="food-description">
+            <h3>Fried Rice</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
+              ut.
+            </p>
+          </div>
+        </article>
+        <h2 class="snacks">Snacks</h2>
+        <article class="food-grouping">
+          <img
+            src="media/images/white_rabbit_candy.png"
+            alt="White Rabbit Candy, Hong Kong Snacks"
+          />
+          <div class="food-description">
+            <h3>White Rabbit Candy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In, id!
+            </p>
+          </div>
+        </article>
+        <article class="food-grouping">
+          <img
+            src="media/images/meiji_gummy_choco.jpg"
+            alt="Meiji Gummy Chocos, Hong Kong Snacks"
+          />
+          <div class="food-description">
+            <h3>Meiji Gummy Chocos</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              repellat.
+            </p>
+          </div>
+        </article>
+      </main>
       <footer>
         <div class="footer-text">
           <p><a href="#site-logo">Back to Top</a></p>

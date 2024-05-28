@@ -3,58 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Country Website | Home</title>
+    <title>Explore Hong Kong</title>
+    <meta
+      name="description"
+      content="Learn about all the attractions and food that Hong Kong has to offer."
+    />
     <link rel="stylesheet" href="styles/normalize-fwd.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="media/favicons/country_website_favicon.svg"
-    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <script defer src="scripts/scripts.js"></script>
   </head>
   <body>
+    <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div id="wrapper">
       <header>
-        <a href="index.html"
-          ><img
-            src="media/images/country_website_favicon.png"
-            alt="Webpage Logo for Hong Kong"
-            id="site-logo"
-        /></a>
+        <div class="logo-container-home">
+          <a href="index.html"
+            ><img
+              src="media/images/country_website_favicon.png"
+              alt="Webpage Logo for Hong Kong"
+              id="site-logo"
+          /></a>
 
-        <nav id="main-navigation" class="main-navigation">
-          <button id="menu-btn">
-            <svg
-              clip-rule="evenodd"
-              fill-rule="evenodd"
-              stroke-linejoin="round"
-              stroke-miterlimit="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
-                fill-rule="nonzero"
-              />
-            </svg>
-          </button>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </nav>
+          <nav id="main-navigation" class="main-navigation">
+            <button id="menu-btn">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </button>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="attractions.html">Attractions</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="credits.html">Credits</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <main>
         <section class="hero-section">
-          <video autoplay muted loop class="hero-video">
-            <source src="media/videos/hong_kong_cityscape_hero.mov" />
+          <video autoplay muted loop playsinline class="hero-video">
+            <source
+              src="media/videos/hong_kong_cityscape_hero.mp4"
+              type="video/mp4"
+            />
           </video>
           <h1>Hong Kong</h1>
         </section>
-        <section class="main-content">
+        <section class="main-content" id="site-main">
           <article class="main-content-article">
             <img src="media/images/hong_kong_map.png" alt="Map of Hong Kong" />
             <div class="main-content-text">
@@ -72,7 +81,7 @@
               alt="Ariel View of Yik Fat Building, Hong Kong"
             />
             <div class="main-content-text">
-              <h2><a href="#">Attractions</a></h2>
+              <h2><a href="attractions.html">Attractions</a></h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Incidunt omnis eius, ratione, quod aliquid nam enim
@@ -83,7 +92,7 @@
           <article class="main-content-article">
             <img src="media/images/dimsum.png" alt="Hong Kong Food: Dimsum" />
             <div class="main-content-text">
-              <h2><a href="#">Food</a></h2>
+              <h2><a href="food.html">Food</a></h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
                 autem est quod blanditiis fugit esse rem tempora id beatae

@@ -3,51 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Country Website | Attractions</title>
+    <title>Attractions | Hong Kong</title>
+    <meta
+      name="description"
+      content="All the places you should check out when visiting Hong Kong."
+    />
     <link rel="stylesheet" href="styles/normalize-fwd.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="media/favicons/country_website_favicon.svg"
-    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <script defer src="scripts/scripts.js"></script>
   </head>
   <body>
+    <a href="#site-main" class="screen-reader-text">Skip to content</a>
     <div id="wrapper">
       <header>
-        <a href="index.html"
-          ><img
-            src="media/images/country_website_favicon.png"
-            alt="Webpage Logo for Hong Kong"
-            id="site-logo"
-        /></a>
-
-        <nav id="main-navigation" class="main-navigation">
-          <button id="menu-btn">
-            <svg
-              clip-rule="evenodd"
-              fill-rule="evenodd"
-              stroke-linejoin="round"
-              stroke-miterlimit="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
-                fill-rule="nonzero"
-              />
-            </svg>
-          </button>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </nav>
+        <div class="logo-container-general">
+          <a href="index.html"
+            ><img
+              src="media/images/country_website_favicon.png"
+              alt="Webpage Logo for Hong Kong"
+              id="site-logo"
+          /></a>
+          <nav id="main-navigation" class="main-navigation others-navigation">
+            <button id="menu-btn">
+              <svg
+                clip-rule="evenodd"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+                stroke-miterlimit="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </button>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="attractions.html">Attractions</a></li>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="credits.html">Credits</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <main></main>
+      <main id="site-main">
+        <h1 class="attractions-heading">Attractions of Hong Kong</h1>
+        <section class="interactive-map">
+          <img
+            src="media/images/interactive_map.jpeg"
+            alt="Map of Hong Kong"
+            class="interactive-map-img"
+          />
+          <section class="attraction-one">
+            <button class="pin-one">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="pin-one-svg"
+              >
+                <path
+                  d="M12 0c-3.313 0-6 2.687-6 6 0 2.972 2.164 5.433 5 5.91v8.09h2v-8.089c2.836-.477 5-2.938 5-5.91 0-3.314-2.687-6.001-6-6.001zm-.707 4.508c-.549.65-1.423.8-1.953.333s-.516-1.372.034-2.022c.548-.65 1.422-.799 1.952-.333.53.467.515 1.372-.033 2.022zm8.707 15.492c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.678 2.069-3.113 5-3.707v2.052l-.436.106c-1.695.491-2.516 1.023-2.516 1.549s.82 1.058 2.516 1.548c2.088.603 4.777.605 6.874-.001 1.706-.493 2.496-1.027 2.507-1.547-.011-.52-.801-1.054-2.507-1.547l-.438-.107v-2.052c2.931.593 5 2.028 5 3.706z"
+                />
+              </svg>
+            </button>
+            <article id="monster-tower-article" class="monster-tower-article">
+              <button class="close-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
+                  />
+                </svg>
+              </button>
+              <h2>Monster Tower</h2>
+              <div class="article-image-and-description">
+                <img
+                  src="media/images/monster_tower_attractions.jpeg"
+                  alt="Monster Tower Hong Kong"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum dignissimos exercitationem doloribus aspernatur
+                  aperiam? Sapiente, enim. Ducimus, esse ea ipsam odit sapiente
+                  quidem magnam? Eos exercitationem debitis harum autem,
+                  corporis sequi in esse nisi accusamus!
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="attraction-two">
+            <button class="pin-two">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="pin-two-svg"
+              >
+                <path
+                  d="M12 0c-3.313 0-6 2.687-6 6 0 2.972 2.164 5.433 5 5.91v8.09h2v-8.089c2.836-.477 5-2.938 5-5.91 0-3.314-2.687-6.001-6-6.001zm-.707 4.508c-.549.65-1.423.8-1.953.333s-.516-1.372.034-2.022c.548-.65 1.422-.799 1.952-.333.53.467.515 1.372-.033 2.022zm8.707 15.492c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.678 2.069-3.113 5-3.707v2.052l-.436.106c-1.695.491-2.516 1.023-2.516 1.549s.82 1.058 2.516 1.548c2.088.603 4.777.605 6.874-.001 1.706-.493 2.496-1.027 2.507-1.547-.011-.52-.801-1.054-2.507-1.547l-.438-.107v-2.052c2.931.593 5 2.028 5 3.706z"
+                />
+              </svg>
+            </button>
+            <article
+              id="avenue-of-stars-article"
+              class="avenue-of-stars-article"
+            >
+              <button class="close-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
+                  />
+                </svg>
+              </button>
+              <h2>Avenue of Stars</h2>
+              <div class="article-image-and-description">
+                <img
+                  src="media/images/avenue_of_stars_attractions.png"
+                  alt="Avenue of Stars Hong Kong"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate vel facilis, voluptatem deleniti consectetur odio
+                  error neque nulla, aliquam vitae nostrum rem expedita deserunt
+                  dignissimos, atque ratione necessitatibus ea! Dolores saepe
+                  iusto vitae quidem culpa.
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="attraction-three">
+            <button class="pin-three">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="pin-three-svg"
+              >
+                <path
+                  d="M12 0c-3.313 0-6 2.687-6 6 0 2.972 2.164 5.433 5 5.91v8.09h2v-8.089c2.836-.477 5-2.938 5-5.91 0-3.314-2.687-6.001-6-6.001zm-.707 4.508c-.549.65-1.423.8-1.953.333s-.516-1.372.034-2.022c.548-.65 1.422-.799 1.952-.333.53.467.515 1.372-.033 2.022zm8.707 15.492c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.678 2.069-3.113 5-3.707v2.052l-.436.106c-1.695.491-2.516 1.023-2.516 1.549s.82 1.058 2.516 1.548c2.088.603 4.777.605 6.874-.001 1.706-.493 2.496-1.027 2.507-1.547-.011-.52-.801-1.054-2.507-1.547l-.438-.107v-2.052c2.931.593 5 2.028 5 3.706z"
+                />
+              </svg>
+            </button>
+            <article id="temple-article" class="temple-article">
+              <button class="close-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
+                  />
+                </svg>
+              </button>
+              <h2>Wong Tai Sin Temple</h2>
+              <div class="article-image-and-description">
+                <img
+                  src="media/images/temple_attractions.png"
+                  alt="Wong Tai Sin Temple Located in Hong Kong"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  quam suscipit quidem maiores nam beatae molestias harum dicta
+                  quae porro, aliquid minima distinctio debitis, quibusdam
+                  dolorum velit obcaecati similique eius. Inventore esse aliquam
+                  ad officiis?
+                </p>
+              </div>
+            </article>
+          </section>
+
+          <section class="attraction-four">
+            <button class="pin-four">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                id="pin-four-svg"
+              >
+                <path
+                  d="M12 0c-3.313 0-6 2.687-6 6 0 2.972 2.164 5.433 5 5.91v8.09h2v-8.089c2.836-.477 5-2.938 5-5.91 0-3.314-2.687-6.001-6-6.001zm-.707 4.508c-.549.65-1.423.8-1.953.333s-.516-1.372.034-2.022c.548-.65 1.422-.799 1.952-.333.53.467.515 1.372-.033 2.022zm8.707 15.492c0 2.209-3.581 4-8 4s-8-1.791-8-4c0-1.678 2.069-3.113 5-3.707v2.052l-.436.106c-1.695.491-2.516 1.023-2.516 1.549s.82 1.058 2.516 1.548c2.088.603 4.777.605 6.874-.001 1.706-.493 2.496-1.027 2.507-1.547-.011-.52-.801-1.054-2.507-1.547l-.438-.107v-2.052c2.931.593 5 2.028 5 3.706z"
+                />
+              </svg>
+            </button>
+            <article id="prison-article" class="prison-article">
+              <button class="close-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 16.538l-4.592-4.548 4.546-4.587-1.416-1.403-4.545 4.589-4.588-4.543-1.405 1.405 4.593 4.552-4.547 4.592 1.405 1.405 4.555-4.596 4.591 4.55 1.403-1.416z"
+                  />
+                </svg>
+              </button>
+              <h2>Former Victoria Prison</h2>
+              <div class="article-image-and-description">
+                <img
+                  src="media/images/victoria_prison_attractions.jpeg"
+                  alt="The Former Victoria Prison located in Hong Kong"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati tenetur, aliquid vitae, itaque consequatur officia
+                  necessitatibus deserunt ipsam perspiciatis odit natus rerum
+                  quisquam et iste ex, fugiat consectetur sequi dolor pariatur
+                  voluptate culpa aut ea.
+                </p>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
       <footer>
         <div class="footer-text">
           <p><a href="#site-logo">Back to Top</a></p>
